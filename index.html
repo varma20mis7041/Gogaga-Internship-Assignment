@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+
+</head>
+
+<body>
+    <div class="app_container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <a class="navbar-brand" href="#">
+                <div class="container">
+                    <div class="row">
+                        <h1 class="logo_letter logo_rose_letter">go</h1>
+                        <h1 class="logo_letter logo_green_letter">g</h1>
+                        <h1 class="logo_letter logo_rose_letter">a</h1>
+                        <h1 class="logo_letter logo_green_letter">g</h1>
+                        <h1 class="logo_letter logo_rose_letter">a</h1>
+                    </div>
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-link" href="#">
+                        Packages
+                    </a>
+                    <a class="nav-link" href="#">Tours</a>
+                    <a class="nav-link" href="#">Help</a>
+                    <div class="d-flex align-items-center">
+                        <a class="nav-link" href="#">Membership</a>
+                        <i class="fa-sharp fa-regular fa-gem m-1"></i>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <a class="nav-link" href="#">Gift cards</a>
+                        <i class="fa-solid fa-gift m-1"></i>
+                    </div>
+                    <div class="ml-auto d-none d-lg-block">
+                        <div class="dropdown">
+                            <button class="dropdown profile_drop_down btn shadow-none" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <div class="profile_container">
+                                    <i class="fa-solid fa-bars mr-2"></i>
+                                    <i class="fa-solid fa-user"></i>
+                                </div>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">Profile</a>
+                                <a class="dropdown-item" href="#">Logout</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-lg-none d-md-block nav-link">
+                        <div class="dropdown">
+                            <button class="dropdown profile_drop_down" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <div class="profile_container">
+                                    <div class="profile_container_left_section">
+                                        <i class="fa-solid fa-user"></i>
+                                        <a class="ml-1 mb-1 nav-link" href="#" class="profile_text">Profile</a>
+                                    </div>
+                                    <i class="fa-solid fa-bars mr-2"></i>
+
+                                </div>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-left" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">Profile</a>
+                                <a class="dropdown-item" href="#">Logout</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+        <div class="home_page_bg_container">
+            <h1 class="home_page_main_heading">Discover Your Next Adventure</h1>
+            <p class="home_page_description">Unlock your path to adventure, start your journey of discovery-where every destination awaits your exploration</p>
+            <div class="packages_and_tours_container">
+                <button class="btn btn-dark">Packages</button>
+                <button class="btn btn-light">Tours</button>
+                <form class="container-fluid mt-2 mt-lg-5">
+                    <div class="row d-flex justify-content-between align-items-center">
+                        <div class="col-12 col-lg-3 form_element_container d-flex flex-column">
+                            <label class="label_element" for="cityInputElement">Destination</label>
+                            <input type="text" class="form-control destination_input_element" id="cityInputElement" placeholder="Enter the City" />
+                        </div>
+                        <div class="col-12 col-lg-4 form_element_container d-flex align-items-center justify-content-between">
+                            <div>
+                                <label class="label_element">Check-in</label>
+                                <input type="date" class="form-control date_input_element" />
+                            </div>
+                            <div class="d-flex flex-column align-items-center">
+                                <i class="fa-solid fa-moon mt-3"></i>
+                                <p>1 Night</p>
+                            </div>
+                            <div>
+                                <label class="label_element">Check-out</label>
+                                <input type="date" class="form-control date_input_element" />
+                            </div>
+
+                        </div>
+
+
+                        <div class="col-12 col-lg-3 form_element_container d-flex justify-content-between align-items-center" type="button" id="openModalBtn">
+                            <div class="d-flex flex-column">
+                                <label class="label_element" for="cityInputElement">Guests and Rooms</label>
+                                <p class="guests_rooms_element" id="guestsRoomsElement">2 audlts, 0 children, 1 room</p>
+                            </div>
+                            <i class="fa-sharp fa-solid fa-caret-down"></i>
+                        </div>
+
+                        <div id="myModal" class="modal">
+
+
+                            <div class="modal_content">
+                                <span class="close">&times;</span>
+                                <div class="container dropdown-container">
+                                    <div class="card p-3">
+                                        <h5 class="card-title">Select Guests and Rooms</h5>
+                                        <div>
+                                            <div class="form-group">
+                                                <label for="adults">Adults:</label>
+                                                <select class="form-control" id="adults">
+                                                    <option>1 adult</option>
+                                                    <option selected>2 adults</option>
+                                                    <option>3 adults</option>
+                                                    <option>4 adults</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="children">Children:</label>
+                                                <select class="form-control" id="children">
+                                                    <option selected>0 children</option>
+                                                    <option>1 child</option>
+                                                    <option>2 children</option>
+                                                    <option>3 children</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="rooms">Rooms:</label>
+                                                <select class="form-control" id="rooms">
+                                                    <option selected>1 room</option>
+                                                    <option>2 rooms</option>
+                                                    <option>3 rooms</option>
+                                                </select>
+                                            </div>
+                                            <button class="btn btn-primary" id="closePopup" onclick="onClickSubmit()" type="button">Submit</button>
+                                        </div>
+                                    </div>
+                                </div>s
+
+                            </div>
+
+                        </div>
+                        <div class="col-1 d-none d-lg-block">
+                            <button class="btn btn-dark search_button">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
+                        </div>
+                        <div class="col-12 d-lg-none d-md-block">
+                            <button class="btn btn-dark search_button d-flex justify-content-center align-items-center">
+                                Search
+                                <i class="fa-solid fa-magnifying-glass ml-1"></i>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+                <div class="rating_container d-flex justify-content-between align-items-center ">
+                    <h1 class="star_rating_heading">Star Rating</h1>
+                    <button class="btn btn-dark d-flex align-items-center">
+                        3
+                        <i class="fa-regular fa-star star_icon"></i>
+                    </button>
+                    <button class="btn btn-dark d-flex align-items-center">4
+                        <i class="fa-regular fa-star star_icon"></i>
+                    </button>
+                    <button class="btn btn-light d-flex align-items-center">5
+                        <i class="fa-regular fa-star star_icon"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
